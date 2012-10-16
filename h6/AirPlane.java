@@ -1,5 +1,6 @@
 import java.util.Random;
 
+/* Comment */
 public class AirPlane {
 
 	private int[][] seats = new int[6][27];
