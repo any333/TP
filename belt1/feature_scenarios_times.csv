@@ -1,0 +1,20 @@
+20.92,features/facebook_share.feature,Share the generated certificates
+16.27,features/instance_create_update.feature,Only signed in users can claim certificates
+15.07,features/facebook_share.feature,Only specifis amount of certificates can be shared on one request
+12.53,features/groups.feature,Using a default key when the groud does not have any key
+10.39,features/statistic.feature,Client can see how many times his certificates were visited
+10.33,features/statistic.feature,Show to all users the most popular certificates
+10.32,features/instance_create_update.feature,There is disapprove link in the email send to the owner when user claims certificate
+8.87,features/facebook_share.feature,Share the generated certificates with different from default message
+8.2,features/key_rewind_feature.feature,First time rewind
+8.17,features/instance_create_update.feature,Update field of an instance to a new value
+6.97,features/statistic.feature,When certificate is visited by nor logged in user the counter for visits is increasing
+6.9,features/promote.feature,Login to promote certificates right after they are generated
+6.82,features/drafts.feature,Show the number of drafts in the menu
+5.83,features/promote.feature,Promote to all owners after new owner is added
+5.62,features/instance_create_update.feature,When user claims certificate other owners confrm the new user
+5.53,features/unsubscribe_user_from_emails.feature,Each email has unique unsubscribe link
+5.52,features/drafts.feature,Saving generated certificates for not signed in users
+5.19,features/facebook_share.feature,Have permission to share the generated certificates
+5.04,features/promote.feature,Show Promote button when certificates are generated from templates
+5.0,features/promote.feature,Promote to all owners of the certificate
