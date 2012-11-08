@@ -1,31 +1,41 @@
 package com.wordpress.any333.h10;
 
-import com.wordpress.any333.h10.Ball;
-import java.util.*;
+import java.util.ArrayList;
 
 public class BallContainer {
+	private int freeSpace = 5;
+	private ArrayList<Ball> BallContainer = new ArrayList<Ball>(freeSpace);
 
-	protected LinkedList<Ball> PlaceInConateiner;
+	public void add(Ball ball) {
+		if (BallContainer.size() != freeSpace) {
+			if (!BallContainer.contains(ball)) {
+				BallContainer.add(ball);
+			} else {
+				System.out.println("The ball already exist.");
+			}
+		} else {
+			System.out.println("Full container.");
+		}
 
-	public void add(Ball ball) throws Exception {
-		if (!contains(ball)) {
-			PlaceInConateiner.add(ball);
-		} 
-	}
-
-	public int size() {
-		return PlaceInConateiner.size();
 	}
 
 	public void remove(Ball ball) {
-		PlaceInConateiner.remove(PlaceInConateiner.indexOf(ball));
+		BallContainer.remove(ball);
+	}
+
+	public void size() {
+		System.out.println(freeSpace);
+	}
+
+	public void getCapacity() {
+		System.out.println(freeSpace - BallContainer.size());
+	}
+
+	public void contains(Ball ball) {
+		System.out.println(BallContainer.contains(ball));
 	}
 
 	public void clear() {
-		PlaceInConateiner.clear();
-	}
-
-	public boolean contains(Ball ball) {
-		return PlaceInConateiner.contains(ball);
+		BallContainer.clear();
 	}
 }

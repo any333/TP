@@ -1,13 +1,16 @@
 package com.wordpress.any333.h10;
 
 public class Ball {
-	private String Name;
+	private int Name;
 
-	public String getName() {
+	public int getName() {
 		return Name;
 	}
 
-	public void setName(String Name) {
+	public void setName(int Name) {
 		this.Name = Name;
+	}
+
+	public Ball(int Name) {
 	}
 }
