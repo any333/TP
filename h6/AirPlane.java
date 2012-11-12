@@ -48,7 +48,7 @@ public void Add(int value){
 						seats[k][r] = 3;
 						seats[k+1][r] = 3;
 						seats[k+2][r] = 3;
-						f=true;
+						full =true;
 						break;
 					}
 				}
