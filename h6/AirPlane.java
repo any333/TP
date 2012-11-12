@@ -11,12 +11,12 @@ import java.util.Random;
 
 public class AirPlane{
 
-	private int[][] seats = new int[27][6];
-	private boolean f = false;
+	private int[][] seats = new int[6][27];
+	private boolean full = false;
 public void PrintSeats(){
 	for(int c = 0; c < 27; c++){
 		for(int n = 0; n < 6; n++){
-			System.out.print(seats[c][n]);
+			System.out.print(seats[n][c]);
 			if(n == 2){
 				System.out.print(" ");
 			}
@@ -25,13 +25,12 @@ public void PrintSeats(){
 	}
 }
 public void Add(int value){
-	f = false;
 	for(int r = 0; r < 27; r++){
 		for(int k = 0; k < 6; k++){
 			if(seats[k][r] == 0){
 				if(value == 1){
 					seats[k][r] = 1;
-					f = true;
+					full = true;
 					break;
 				}
 						
@@ -39,7 +38,7 @@ public void Add(int value){
 					if(seats[k+1][r] == 0 && k%3 <=1){
 						seats[k][r] = 2;
 						seats[k+1][r] = 2;
-						f = true;
+						full = true;
 						break;
 					}
 				}
@@ -57,11 +56,11 @@ public void Add(int value){
 				continue;
 			}
 		}
-		if(f == true){
+		if(full == true){
 			break;
 		}
 	}
-	if(f == false){
+	if(full == false){
 		System.out.println("Stop");
 	}
 }
